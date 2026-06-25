@@ -1,0 +1,240 @@
+/* BODY */
+body {
+    background-color: #0d0d0d; /* darker black for contrast */
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding-top: 100px;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* H1 - NEON TITLE WITH ANIMATION */
+h1 {
+    font-size: 60px;
+    font-family: cursive;
+    color: #ff2e93;
+    margin-bottom: 10px;
+    text-shadow: 0 0 5px #ff2e93, 0 0 15px #ff2e93, 0 0 15px #ff6bb5, 0 0 15px #ff9bd1;
+    animation: neonGlow 2s ease-in-out infinite alternate;
+}
+.stars, .stars2, .stars3{
+position:fixed;
+top:0;
+left:0;
+width:1px;
+height:1px;
+background:transparent;
+pointer-events:none;
+}
+
+.stars{
+box-shadow:
+50px 100px hotpink,
+200px 300px hotpink,
+400px 150px hotpink,
+600px 250px hotpink,
+800px 100px hotpink,
+1000px 200px hotpink,
+1200px 350px hotpink,
+300px 500px hotpink,
+700px 600px hotpink,
+1100px 450px hotpink,
+150px 700px hotpink,
+900px 750px hotpink,
+1300px 600px hotpink,
+500px 850px hotpink,
+100px 900px hotpink;
+
+filter: drop-shadow(0 0 6px hotpink);
+}
+
+.stars2{
+width:2px;
+height:2px;
+
+box-shadow:
+150px 200px #ff8bd1,
+350px 100px #ff8bd1,
+550px 400px #ff8bd1,
+750px 300px #ff8bd1,
+950px 500px #ff8bd1,
+1150px 150px #ff8bd1,
+1350px 350px #ff8bd1,
+250px 650px #ff8bd1,
+450px 750px #ff8bd1,
+650px 850px #ff8bd1;
+
+filter: drop-shadow(0 0 8px hotpink);
+}
+
+.stars3{
+width:3px;
+height:3px;
+
+box-shadow:
+100px 150px #ffc0e6,
+300px 350px #ffc0e6,
+500px 250px #ffc0e6,
+700px 450px #ffc0e6,
+900px 650px #ffc0e6,
+1100px 550px #ffc0e6,
+1300px 750px #ffc0e6;
+
+filter: drop-shadow(0 0 10px hotpink);
+}
+
+@keyframes twinkle{
+0%{opacity:0.5;}
+50%{opacity:1;}
+100%{opacity:0.5;}
+}
+
+.stars{
+animation: twinkle 4s infinite;
+}
+
+.stars2{
+animation: twinkle 6s infinite;
+}
+
+.stars3{
+animation: twinkle 8s infinite;
+}
+@keyframes neonGlow {
+    0% { text-shadow: 0 0 5px #ff2e93, 0 0 15px #ff2e93, 0 0 30px #ff6bb5, 0 0 60px #ff9bd1; }
+    50% { text-shadow: 0 0 10px #ff6bb5, 0 0 20px #ff89ce, 0 0 40px #ff9bd1, 0 0 80px #ff2e93; }
+    100% { text-shadow: 0 0 5px #ff2e93, 0 0 15px #ff2e93, 0 0 30px #ff6bb5, 0 0 60px #ff9bd1; }
+}
+
+/* H2 - GRADIENT COLOR */
+h2 {
+    font-family: cursive;
+    font-size: 30px;
+    background: linear-gradient(90deg, #ff2e93, #ff6bb5, #ff9bd1, #ff2e93);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientShift 5s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+.system-card{
+background:black;
+color:#ffb6d9;
+font-family:monospace;
+
+max-width:650px;
+margin:60px auto;
+padding:30px;
+
+border-radius:15px;
+box-shadow:0 0 40px #00d9ff;
+}
+
+.card-content{
+display:flex;
+align-items:center;
+gap:30px;
+}
+
+.card-photo{
+width:200px;
+height:200px;
+object-fit:cover;
+
+border-radius:10px;
+border:2px solid #00d9ff;
+box-shadow:0 0 15px #00d9ff;
+}
+
+.card-text p{
+margin:8px 0;
+}
+
+.title{
+color:#ff7eb6;
+margin-bottom:20px;
+}
+/* SUBTITLE */
+.subtitle {
+    color: #fff;
+    font-size: 22px;
+    font-family: monospace;
+    margin-bottom: 60px;
+    text-shadow: 0 0 2px #ff2e93, 0 0 5px #ff6bb5;
+}
+
+/* SECTIONS */
+section {
+    margin-top: 60px;
+}
+
+/* PARAGRAPHS */
+p {
+    color: #fff;
+    font-family: monospace;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 15px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-shadow: 0 0 1px #ff2e93, 0 0 2px #ff6bb5;
+}
+
+/* LIST ITEMS */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin: 5px;
+    font-size: 18px;
+    font-family: monospace;
+    color:whitesmoke;
+    text-shadow: white;
+}
+
+/* CONTACT SECTION */
+.contact {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.contact h2 {
+    font-family: cursive;
+    font-size: 32px;
+    color: #ff2e93;
+    text-shadow: 0 0 5px #ff2e93, 0 0 15px #ff6bb5;
+    margin-bottom: 10px;
+}
+
+.contact-text {
+    font-family: monospace;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 0 0 2px #ff2e93, 0 0 5px #ff6bb5;
+}
+
+.contact-links a {
+    display: inline-block;
+    margin: 10px 15px;
+    font-family: monospace;
+    font-size: 18px;
+    color: #ff2e93;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 8px;
+    box-shadow: 0 0 12px #ff2e93;
+    transition: 0.3s;
+}
+
+.contact-links a:hover {
+    color: #fff;
+    box-shadow: 0 0 20px #ff6bb5, 0 0 40px #ff2e93;
+    transform: translateY(-2px);
+}
