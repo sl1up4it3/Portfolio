@@ -1,6 +1,6 @@
 /* BODY */
 body {
-    background-color: #0d0d0d; /* darker black for contrast */
+    background-color: #0d1520; /* dark navy base */
     text-align: center;
     font-family: Arial, sans-serif;
     padding-top: 100px;
@@ -12,9 +12,9 @@ body {
 h1 {
     font-size: 60px;
     font-family: cursive;
-    color: #ff2e93;
+    color: #7AAEC4;
     margin-bottom: 10px;
-    text-shadow: 0 0 5px #ff2e93, 0 0 15px #ff2e93, 0 0 15px #ff6bb5, 0 0 15px #ff9bd1;
+    text-shadow: 0 0 5px #7AAEC4, 0 0 15px #7AAEC4, 0 0 15px #2E5F7E, 0 0 15px #C8DCE8;
     animation: neonGlow 2s ease-in-out infinite alternate;
 }
 .stars, .stars2, .stars3{
@@ -29,23 +29,23 @@ pointer-events:none;
 
 .stars{
 box-shadow:
-50px 100px hotpink,
-200px 300px hotpink,
-400px 150px hotpink,
-600px 250px hotpink,
-800px 100px hotpink,
-1000px 200px hotpink,
-1200px 350px hotpink,
-300px 500px hotpink,
-700px 600px hotpink,
-1100px 450px hotpink,
-150px 700px hotpink,
-900px 750px hotpink,
-1300px 600px hotpink,
-500px 850px hotpink,
-100px 900px hotpink;
+50px 100px #7AAEC4,
+200px 300px #7AAEC4,
+400px 150px #7AAEC4,
+600px 250px #7AAEC4,
+800px 100px #7AAEC4,
+1000px 200px #7AAEC4,
+1200px 350px #7AAEC4,
+300px 500px #7AAEC4,
+700px 600px #7AAEC4,
+1100px 450px #7AAEC4,
+150px 700px #7AAEC4,
+900px 750px #7AAEC4,
+1300px 600px #7AAEC4,
+500px 850px #7AAEC4,
+100px 900px #7AAEC4;
 
-filter: drop-shadow(0 0 6px hotpink);
+filter: drop-shadow(0 0 6px #7AAEC4);
 }
 
 .stars2{
@@ -53,18 +53,18 @@ width:2px;
 height:2px;
 
 box-shadow:
-150px 200px #ff8bd1,
-350px 100px #ff8bd1,
-550px 400px #ff8bd1,
-750px 300px #ff8bd1,
-950px 500px #ff8bd1,
-1150px 150px #ff8bd1,
-1350px 350px #ff8bd1,
-250px 650px #ff8bd1,
-450px 750px #ff8bd1,
-650px 850px #ff8bd1;
+150px 200px #C8DCE8,
+350px 100px #C8DCE8,
+550px 400px #C8DCE8,
+750px 300px #C8DCE8,
+950px 500px #C8DCE8,
+1150px 150px #C8DCE8,
+1350px 350px #C8DCE8,
+250px 650px #C8DCE8,
+450px 750px #C8DCE8,
+650px 850px #C8DCE8;
 
-filter: drop-shadow(0 0 8px hotpink);
+filter: drop-shadow(0 0 8px #7AAEC4);
 }
 
 .stars3{
@@ -72,15 +72,15 @@ width:3px;
 height:3px;
 
 box-shadow:
-100px 150px #ffc0e6,
-300px 350px #ffc0e6,
-500px 250px #ffc0e6,
-700px 450px #ffc0e6,
-900px 650px #ffc0e6,
-1100px 550px #ffc0e6,
-1300px 750px #ffc0e6;
+100px 150px #E8E4DE,
+300px 350px #E8E4DE,
+500px 250px #E8E4DE,
+700px 450px #E8E4DE,
+900px 650px #E8E4DE,
+1100px 550px #E8E4DE,
+1300px 750px #E8E4DE;
 
-filter: drop-shadow(0 0 10px hotpink);
+filter: drop-shadow(0 0 10px #C8DCE8);
 }
 
 @keyframes twinkle{
@@ -101,16 +101,17 @@ animation: twinkle 6s infinite;
 animation: twinkle 8s infinite;
 }
 @keyframes neonGlow {
-    0% { text-shadow: 0 0 5px #ff2e93, 0 0 15px #ff2e93, 0 0 30px #ff6bb5, 0 0 60px #ff9bd1; }
-    50% { text-shadow: 0 0 10px #ff6bb5, 0 0 20px #ff89ce, 0 0 40px #ff9bd1, 0 0 80px #ff2e93; }
-    100% { text-shadow: 0 0 5px #ff2e93, 0 0 15px #ff2e93, 0 0 30px #ff6bb5, 0 0 60px #ff9bd1; }
+    0% { text-shadow: 0 0 5px #7AAEC4, 0 0 15px #7AAEC4, 0 0 30px #2E5F7E, 0 0 60px #C8DCE8; }
+    50% { text-shadow: 0 0 10px #C8DCE8, 0 0 20px #7AAEC4, 0 0 40px #2E5F7E, 0 0 80px #1B2A3B; }
+    100% { text-shadow: 0 0 5px #7AAEC4, 0 0 15px #7AAEC4, 0 0 30px #2E5F7E, 0 0 60px #C8DCE8; }
 }
 
 /* H2 - GRADIENT COLOR */
 h2 {
     font-family: cursive;
     font-size: 30px;
-    background: linear-gradient(90deg, #ff2e93, #ff6bb5, #ff9bd1, #ff2e93);
+    background: linear-gradient(90deg, #1B2A3B, #2E5F7E, #7AAEC4, #1B2A3B);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: gradientShift 5s ease infinite;
@@ -122,8 +123,8 @@ h2 {
     100% { background-position: 0% 50%; }
 }
 .system-card{
-background:black;
-color:#ffb6d9;
+background:#1B2A3B;
+color:#C8DCE8;
 font-family:monospace;
 
 max-width:650px;
@@ -131,7 +132,7 @@ margin:60px auto;
 padding:30px;
 
 border-radius:15px;
-box-shadow:0 0 40px #00d9ff;
+box-shadow:0 0 40px #2E5F7E;
 }
 
 .card-content{
@@ -146,8 +147,8 @@ height:200px;
 object-fit:cover;
 
 border-radius:10px;
-border:2px solid #00d9ff;
-box-shadow:0 0 15px #00d9ff;
+border:2px solid #7AAEC4;
+box-shadow:0 0 15px #2E5F7E;
 }
 
 .card-text p{
@@ -155,16 +156,16 @@ margin:8px 0;
 }
 
 .title{
-color:#ff7eb6;
+color:#7AAEC4;
 margin-bottom:20px;
 }
 /* SUBTITLE */
 .subtitle {
-    color: #fff;
+    color: #E8E4DE;
     font-size: 22px;
     font-family: monospace;
     margin-bottom: 60px;
-    text-shadow: 0 0 2px #ff2e93, 0 0 5px #ff6bb5;
+    text-shadow: 0 0 2px #2E5F7E, 0 0 5px #7AAEC4;
 }
 
 /* SECTIONS */
@@ -174,14 +175,14 @@ section {
 
 /* PARAGRAPHS */
 p {
-    color: #fff;
+    color: #C8DCE8;
     font-family: monospace;
     max-width: 700px;
     margin: auto;
     margin-top: 15px;
     font-size: 18px;
     line-height: 1.5;
-    text-shadow: 0 0 1px #ff2e93, 0 0 2px #ff6bb5;
+    text-shadow: 0 0 1px #2E5F7E, 0 0 2px #7AAEC4;
 }
 
 /* LIST ITEMS */
@@ -194,8 +195,8 @@ li {
     margin: 5px;
     font-size: 18px;
     font-family: monospace;
-    color:whitesmoke;
-    text-shadow: white;
+    color: #E8E4DE;
+    text-shadow: #C8DCE8;
 }
 
 /* CONTACT SECTION */
@@ -207,17 +208,17 @@ li {
 .contact h2 {
     font-family: cursive;
     font-size: 32px;
-    color: #ff2e93;
-    text-shadow: 0 0 5px #ff2e93, 0 0 15px #ff6bb5;
+    color: #7AAEC4;
+    text-shadow: 0 0 5px #7AAEC4, 0 0 15px #2E5F7E;
     margin-bottom: 10px;
 }
 
 .contact-text {
     font-family: monospace;
     font-size: 18px;
-    color: #fff;
+    color: #C8DCE8;
     margin-bottom: 20px;
-    text-shadow: 0 0 2px #ff2e93, 0 0 5px #ff6bb5;
+    text-shadow: 0 0 2px #2E5F7E, 0 0 5px #7AAEC4;
 }
 
 .contact-links a {
@@ -225,16 +226,16 @@ li {
     margin: 10px 15px;
     font-family: monospace;
     font-size: 18px;
-    color: #ff2e93;
+    color: #7AAEC4;
     text-decoration: none;
     padding: 8px 14px;
     border-radius: 8px;
-    box-shadow: 0 0 12px #ff2e93;
+    box-shadow: 0 0 12px #2E5F7E;
     transition: 0.3s;
 }
 
 .contact-links a:hover {
-    color: #fff;
-    box-shadow: 0 0 20px #ff6bb5, 0 0 40px #ff2e93;
+    color: #E8E4DE;
+    box-shadow: 0 0 20px #7AAEC4, 0 0 40px #2E5F7E;
     transform: translateY(-2px);
 }

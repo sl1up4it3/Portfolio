@@ -12,8 +12,8 @@ document.addEventListener("DOMContentLoaded", function () {
   loader.style.left = "0";
   loader.style.width = "100%";
   loader.style.height = "100%";
-  loader.style.background = "black";
-  loader.style.color = "#00ff88";
+  loader.style.background = "#1B2A3B";
+  loader.style.color = "#7AAEC4";
   loader.style.display = "flex";
   loader.style.alignItems = "center";
   loader.style.justifyContent = "center";
@@ -70,10 +70,10 @@ document.addEventListener("DOMContentLoaded", function () {
     const title = document.querySelector("h1");
 
     const colors = [
-      "#ff2e93",
-      "#ff6bb5",
-      "#ff9bd1",
-      "#ff2e93"
+      "#2E5F7E",
+      "#7AAEC4",
+      "#C8DCE8",
+      "#2E5F7E"
     ];
 
     let colorIndex = 0;
@@ -124,8 +124,8 @@ for (let i = 0; i < trailCount; i++) {
   t.style.height = "12px";
   t.style.borderRadius = "50%";
   t.style.pointerEvents = "none";
-  t.style.background = "hotpink";
-  t.style.boxShadow = "0 0 12px hotpink, 0 0 25px hotpink";
+  t.style.background = "#7AAEC4";
+  t.style.boxShadow = "0 0 12px #7AAEC4, 0 0 25px #2E5F7E";
   t.style.opacity = (1 - i / trailCount);
 
   document.body.appendChild(t);
